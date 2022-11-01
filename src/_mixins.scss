@@ -1,0 +1,26 @@
+/* added for responsive */
+@mixin responsive-dialogs {
+
+  // @media screen and (max-width: 959px) {
+    @media screen and (max-width: 300px) {
+    .modal-panel {
+      min-width: 0 !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      width: 100% !important;
+      height: 100% !important;
+
+      .mat-dialog-container {
+        border-radius: 0;
+        padding: 14px !important;
+        margin: 0 24px !important;
+        .dialog-title {
+          margin: 0 !important;
+        }
+      }
+
+    }
+
+  }
+
+}

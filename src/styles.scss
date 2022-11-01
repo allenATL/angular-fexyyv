@@ -1,0 +1,43 @@
+
+body {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 30px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+@import "./mixins";
+@include responsive-dialogs();
+.mat-dialog-container {
+  padding : 0  !important;
+  overflow: hidden !important;
+  .dialog-title {
+    height: 40px;
+    border-bottom : 1px solid #333333;
+    vertical-align: middle;
+    margin: 8px 0 !important;
+    line-height:40px!important;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px!important;
+    .close-dialog{
+      float:right;
+      margin-top: 6px;
+    }
+  }
+  .mat-dialog-content{
+    margin:0 !important;
+    padding: 0 12px !important;
+  }
+  .mat-dialog-actions{
+    float:right;
+    margin-bottom: -12px !important;
+    margin-right: 8px;
+  }
+}
